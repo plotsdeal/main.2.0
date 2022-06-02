@@ -1,0 +1,267 @@
+.property-bg {
+	background: #F6F7FB;
+}
+
+.featured-properties .detail .featured-time-box {
+	text-align: right;
+	margin-top: -26px;
+}
+
+.featured-properties .detail .fa-clock-o {
+	font-size: 12px;
+	color: #597393;
+}
+
+.featured-properties .detail .featured-project-time {
+	font-size: 12px;
+	color: #597393;
+	font-family: 'Poppins';
+}
+
+.property-filter {
+	padding: 0px 15px 40px;
+	box-sizing: border-box;
+}
+
+.property-filter .property-filter-box {
+	background: #fff;
+	padding: 10px 26px;
+	/*margin-top: 57px;*/
+}
+
+.property-title {
+	color: #66C109;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.property-form {
+	padding: 0px;
+	padding: 2px 10px 2px 3px;
+	border-radius: 4px;
+	border: 1px solid #C5CED9;
+}
+
+.property-form select {
+	margin-top: 0px;
+	width: 100%;
+	color: #597393;
+	font-weight: normal;
+	border-radius: 4px;
+	margin-left: 0px;
+	padding: 4px 10px;
+}
+
+.property-form select:focus {
+	outline: none;
+}
+
+.property-filter-search {
+	position: relative;
+}
+
+.property-filter-search input {
+	width: 100%;
+	border: none;
+	border-width: 1px;
+	border-style: solid;
+	padding: 8px 10px;
+	border-color: #C5CED9;
+	border-radius: 3px;
+	padding-left: 3.5rem;
+}
+
+.property-filter-search .fa {
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	color: #597393;
+}
+
+.property-label-boxes {
+	border: 1px solid #C5CED9;
+	border-radius: 3px;
+	padding: 12px 10px 10px 10px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+.property-cross {
+	position: absolute;
+	right: 0px;
+	width: 25px;
+	top: 0px;
+	text-align: center;
+	height: 35px;
+}
+
+.property-cross .fa-times {
+	color: #000;
+	position: relative;
+	top: 14px;
+	right: 8px;
+}
+
+.property-cross:before {
+	content: '';
+	display: inline-block;
+	height: 35px;
+	position: absolute;
+	top: 7px;
+	left: -16px;
+	border-left: 1px solid #C5CED9;
+}
+
+.property-top {
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+.property-middle {
+	margin-bottom: 55px;
+}
+
+.property-search-btn {
+	text-align: right;
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+
+.property-search-btn .btn-search {
+	text-transform: uppercase;
+	background-color: #66C109 !important;
+	border-color: #66C109 !important;
+	padding: 14px 30px !important;
+	border-radius: 3px !important;
+}
+
+.check-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 0px;
+	cursor: pointer;
+	color: #597393;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 23px;
+	width: 23px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input~.checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked~.checkmark {
+	background-color: #66C109;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked~.checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+@media only screen and (min-width: 1500px) {
+	.days {
+		font-size: 16px;
+	}
+
+	.property-button a {
+		font-size: 14px;
+	}
+
+	.price {
+		font-size: 24px;
+	}
+
+	.property-box .detail .title a {
+		font-size: 24px;
+	}
+}
+
+/**properties page filter**/
+
+.right-properties .sort-prop {
+	text-align: right;
+	/* position: absolute;
+	top: 0;
+	z-index: 9; */
+}
+
+.right-properties .sort-prop select {
+	border: none;
+	background-color: transparent;
+	font: normal normal normal 18px/27px Poppins;
+	letter-spacing: 0px;
+	color: #66C109;
+	padding-right: 15px;
+	outline: none;
+}
+
+.right-properties {
+	position: relative;
+}
+
+.right-properties .sort-prop label {
+	font: normal normal normal 18px/27px Poppins;
+	letter-spacing: 0px;
+	color: #597393;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+	.property-filter .property-filter-box {
+		margin-top: 0px;
+	}
+
+	.right-properties {
+		margin-top: 30px;
+	}
+
+	.right-properties {
+		max-height: 900px;
+	}
+}
